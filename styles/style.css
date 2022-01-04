@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	margin: 0;
+	background-color: #aaaaaa;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	background-color: rgba(136, 136, 136, 0.4);
+}
+header {
+	background-color: #2d2f31;
+}
+.header-block {
+	position: sticky;
+	top: 0;
+	height: 50px;
+	z-index: 2;
+}
+
+.header__nav {
+	margin: 0;
+}
+
+.header__nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list-item {
+	 list-style-type: none;
+}
+
+.header__nav-list-item:nth-child(5) {
+		 margin-right: 50px;
+}
+
+.header__nav-list-link {
+	text-decoration: none;
+	color: #fefefe;
+	padding: 0 20px;
+}
+
+.header__nav-list-link:hover {
+	color: rgba(255, 79, 0, 0.8);
+}
+
+.containers {
+	display: flex;
+	width: 100%;
+}
+
+.container__left {
+	width: 27%;
+	display: flex;
+	flex-direction: column;
+	background-color: #2d2f31;
+}
+
+.container__right {
+	width: 73%;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.avatar {
+	width: 100%;
+}
+
+.block-main__name-title {
+	margin: 0;
+	font-size: 70px;
+	font-style: italic;
+	color: #2d2f31;
+}
+
+.block-main__name-title:hover {
+	transition: 2s;
+	margin-left: 100px;
+}
+
+.avatar:hover {
+	transition: 1s;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+  z-index: 1;
+}
+
+.contact-block__title, 
+.education-block__title, 
+.languages-block__title {
+	color: #fefefe;
+	font-size: 14px;
+	text-align: right;
+	padding: 2px 7px 2px;
+	padding-right: 7px;
+	text-transform: uppercase;
+	background-color: rgba(255, 79, 0, 0.8);
+}
+
+.contact-block__title:hover, 
+.education-block__title:hover, 
+.languages-block__title:hover {
+	transition: 2s;
+	padding-right: 12px;
+	-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+
+.block-summary__title, 
+.block-expirience__title, 
+.block-code__title,
+.block-skills__title, 
+.block-projects__title {
+	color: #fefefe;
+	font-size: 14px;
+	text-align: right;
+	line-height: 1.3;
+	padding: 5px 10px 5px;
+	text-transform: uppercase;
+	background-color: rgba(255, 79, 0, 0.8);
+}
+
+.block-summary__title:hover, 
+.block-expirience__title:hover, 
+.block-code__title:hover,
+.block-skills__title:hover, 
+.block-projects__title:hover {
+	transition: 2s;
+	padding-right: 12px;
+	-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+
+.contact-block__menu-list-item {
+	list-style-type: none;
+	text-align: left;
+}
+
+
+.contact-block__menu-list-link {
+	text-decoration: none;
+	color: #fefefe;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.contact-block__menu-list-link:hover {
+	color: rgba(255, 79, 0, 0.8);
+}
+
+.education-block__menu-list-item, 
+.languages-block__menu-list-item {
+	list-style-type: none;
+	text-align: left;
+	margin-right: 15px;
+}
+
+.header__nav-list-text,
+.languages-block__menu-list-item {
+	color: #fefefe;
+	font-size: 18px;
+	margin: 0 0 5px 0;
+}
+
+.header__nav-list-text:hover,
+.languages-block__menu-list-item:hover {
+	font-style: italic;
+}
+
+
+nav {
+	display: flex;
+	width: 100%;
+	align-content: center;
+	align-items: center;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.main-title__skill {
+	width: 45%;
+	margin-top: 1px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #2d2f31;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 130px;
+	background-color: #ebebeb;
+	
+}
+
+.main-title__skill:hover {
+		transition: 2s;
+		margin-left: 230px;
+}
+
+.block-summary__text, 
+.block-expirience__text, 
+.block-skills__menu-list-text, 
+.block-projects__text {
+	padding: 0 1px 0;
+	text-indent: 10px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+.block-summary__text:hover, 
+.block-expirience__text:hover, 
+.block-skills__menu-list-text:hover, 
+.block-projects__text:hover {
+	font-style: italic;
+}
+
+.block-code__example {
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+	margin-bottom: 10px;
+	font-size: 14px;
+	overflow: auto;
+	width: auto;
+	padding: 5px;
+	width: 650px!ie7;
+	max-height: 600px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	color: #fefefe;
+	background: #2d2f31;
+	padding: 7px 20px 5px 20px;
+}
+
+.block-footer__img {
+    height: 50px;
+    margin-left: 50px;
+}
+
+.block-footer__img:hover {
+		transition: 1s;
+		transform: scale(1.1);
+}
+
+.footer-year__title {
+		text-align: center;
+		color: #fefefe;
+}
+
+.footer-year__title:hover {
+		transition: 1s;
+		transform: scale(1.1);
+}
+
+
+.block-skills__menu-list {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 0 20%;
+}
+
+.block-skills__menu-list-item, 
+.block-projects__menu-list-item {
+	  position: relative;
+	  list-style-type: none;	  
+}
+
+.block-skills__menu-list-text {
+		margin: 0;
+		padding-top: 2px;
+		margin-bottom: 13px;
+
+}
+
+.block-skills__menu-list__icons {
+	position: absolute;
+	left: -23px;
+	height: 30px;
+	width: 30px;
+}
+
+
+.block-projects__menu-list {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 0 2%;
+}
+
+.block-projects__menu-list__icons {
+	border: 1px solid rgba(255, 79, 0, 0.5);
+	padding: 0;
+	height: 247px;
+	margin-bottom: 15px;
+}
+
+
+#skills, 
+#code, 
+#summary, 
+#projects, 
+#experience {
+  scroll-margin-top: 50px;
+}
+
+.block-projects__menu-list__icons:hover {
+		transition: 2s;
+		transform: scale(1.1);
+}
