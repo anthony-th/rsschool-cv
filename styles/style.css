@@ -5,13 +5,13 @@
 }
 
 html {
-  scroll-behavior: smooth; 
+    scroll-behavior: smooth; 
 }
 
 body {
 	display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 	margin: 0;
 	background-color: #aaaaaa;
 	font-family: 'Roboto', sans-serif;
@@ -45,11 +45,11 @@ header {
 }
 
 .header__nav-list-item {
-	 list-style-type: none;
+	list-style-type: none;
 }
 
 .header__nav-list-item:nth-child(5) {
-		 margin-right: 50px;
+	margin-right: 50px;
 }
 
 .header__nav-list-link {
@@ -69,8 +69,6 @@ header {
 
 .container__left {
 	width: 27%;
-	display: flex;
-	flex-direction: column;
 	background-color: #2d2f31;
 }
 
@@ -98,13 +96,13 @@ header {
 
 .avatar:hover {
 	transition: 1s;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray; /* IE 6-9 */
-  z-index: 1;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    z-index: 1;
 }
 
 .contact-block__title, 
@@ -125,11 +123,11 @@ header {
 	transition: 2s;
 	padding-right: 12px;
 	-webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray; /* IE 6-9 */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
 }
 
 .block-summary__title, 
@@ -154,11 +152,11 @@ header {
 	transition: 2s;
 	padding-right: 12px;
 	-webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray; /* IE 6-9 */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
 }
 
 .contact-block__menu-list-item {
@@ -192,12 +190,6 @@ header {
 	margin: 0 0 5px 0;
 }
 
-.header__nav-list-text:hover,
-.languages-block__menu-list-item:hover {
-	font-style: italic;
-}
-
-
 nav {
 	display: flex;
 	width: 100%;
@@ -221,8 +213,8 @@ nav {
 }
 
 .main-title__skill:hover {
-		transition: 2s;
-		margin-left: 230px;
+	transition: 2s;
+	margin-left: 230px;
 }
 
 .block-summary__text, 
@@ -238,7 +230,9 @@ nav {
 .block-summary__text:hover, 
 .block-expirience__text:hover, 
 .block-skills__menu-list-text:hover, 
-.block-projects__text:hover {
+.block-projects__text:hover, 
+.header__nav-list-text:hover,
+.languages-block__menu-list-item:hover {
 	font-style: italic;
 }
 
@@ -268,41 +262,37 @@ footer {
     margin-left: 50px;
 }
 
-.block-footer__img:hover {
-		transition: 1s;
-		transform: scale(1.1);
-}
-
 .footer-year__title {
-		text-align: center;
-		color: #fefefe;
+	text-align: center;
+	color: #fefefe;
 }
 
-.footer-year__title:hover {
-		transition: 1s;
-		transform: scale(1.1);
+.footer-year__title:hover,
+.block-footer__img:hover {
+	transition: 1s;
+	transform: scale(1.1);
 }
 
 
 .block-skills__menu-list {
-		margin: 0;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: center;
-		padding: 0 20%;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 20%;
 }
 
 .block-skills__menu-list-item, 
 .block-projects__menu-list-item {
-	  position: relative;
-	  list-style-type: none;	  
+	position: relative;
+	list-style-type: none;	  
 }
 
 .block-skills__menu-list-text {
-		margin: 0;
-		padding-top: 2px;
-		margin-bottom: 13px;
+	margin: 0;
+	padding-top: 2px;
+	margin-bottom: 13px;
 
 }
 
@@ -313,14 +303,13 @@ footer {
 	width: 30px;
 }
 
-
 .block-projects__menu-list {
-		margin: 0;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: center;
-		padding: 0 2%;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 2%;
 }
 
 .block-projects__menu-list__icons {
@@ -330,16 +319,15 @@ footer {
 	margin-bottom: 15px;
 }
 
-
 #skills, 
 #code, 
 #summary, 
 #projects, 
 #experience {
-  scroll-margin-top: 50px;
+	scroll-margin-top: 50px;
 }
 
 .block-projects__menu-list__icons:hover {
-		transition: 2s;
-		transform: scale(1.1);
+	transition: 2s;
+	transform: scale(1.1);
 }
