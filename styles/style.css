@@ -185,18 +185,37 @@ header {
 .contact-block__menu-list-item {
 	list-style-type: none;
 	text-align: left;
+	margin-bottom: 5px;
 }
-
 
 .contact-block__menu-list-link {
 	text-decoration: none;
 	color: #fefefe;
 	font-size: 18px;
 	line-height: 1.3;
+	position: relative;
 }
 
 .contact-block__menu-list-link:hover {
 	color: rgba(255, 79, 0, 0.8);
+}
+
+.contact-block__menu-list-link::before {
+	content: '';
+	position: absolute;
+	left: 0; 
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color: rgba(255, 79, 0, 0.7);
+}
+
+.contact-block__menu-list-link:hover:before {
+	width: 100%;
+}
+
+.contact-block__menu-list-link::before {
+	transition: width 0.35s;
 }
 
 .education-block__menu-list-item, 
@@ -367,4 +386,17 @@ footer {
 .buttonTop:hover {
 	transform: scale(1.2);
 	transition: 1s;
+}
+
+.block-main__name-title,
+.main-title__skill,
+.contact-block__title, 
+.education-block__title, 
+.languages-block__title,
+.block-summary__title, 
+.block-expirience__title, 
+.block-code__title,
+.block-skills__title, 
+.block-projects__title {
+	cursor: default;
 }
