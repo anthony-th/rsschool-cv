@@ -13,7 +13,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
 	margin: 0;
-	background-color: #aaaaaa;
+/*	background-color: #aaaaaa;*/
+	background-color: #191a1b;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -29,7 +30,7 @@ header {
 .header-block {
 	position: sticky;
 	top: 0;
-	height: 50px;
+/*	height: 50px;*/
 	z-index: 2;
 }
 
@@ -56,10 +57,32 @@ header {
 	text-decoration: none;
 	color: #fefefe;
 	padding: 0 20px;
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	position: relative;
+	transition: all 0.4s ease;
 }
 
 .header__nav-list-link:hover {
 	color: rgba(255, 79, 0, 0.8);
+}
+
+.header__nav-list-link::after { 
+ 	content: "";
+ 	position: absolute;
+ 	height: 2px;
+ 	background-color: rgba(255, 79, 0, 0.8);
+ 	width: 0;
+ 	left: 50%;
+ 	bottom: -7px;
+ 	transform: translateX(-50%);
+ 	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.header__nav-list-link:hover::after { 
+	width: 100%; 
 }
 
 .containers {
@@ -330,4 +353,18 @@ footer {
 .block-projects__menu-list__icons:hover {
 	transition: 2s;
 	transform: scale(1.1);
+}
+
+.buttonTop {
+	display: block;
+	background: url('../images/btnUp.png') center no-repeat;
+	background-size: 32px;
+	height: 32px; width: 32px;
+	position: fixed; bottom: 15px; right: 17px;
+	z-index: 2;
+}
+
+.buttonTop:hover {
+	transform: scale(1.2);
+	transition: 1s;
 }
