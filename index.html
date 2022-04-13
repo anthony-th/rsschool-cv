@@ -93,18 +93,38 @@
 						<ul class="block-skills__menu-list">
 							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/css.png" alt="CSS"><p class="block-skills__menu-list-text">CSS</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/html.png" alt="HTML"><p class="block-skills__menu-list-text">HTML</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/sass.png" alt="SASS"><p class="block-skills__menu-list-text">SASS</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/js.png" alt="JavaScript"><p class="block-skills__menu-list-text">JavaScript</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/react.png" alt="React"><p class="block-skills__menu-list-text">React</p>
-								<img class="block-skills__menu-list__icons" src="./images/figma.png" alt="FIGMA"><p class="block-skills__menu-list-text">Figma</p>								
+							</li>
+							<li class="block-skills__menu-list-item">
+								<img class="block-skills__menu-list__icons" src="./images/figma.png" alt="FIGMA"><p class="block-skills__menu-list-text">Figma</p>						
 							</li>
 							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/git.png" alt="GitHub"><p class="block-skills__menu-list-text">GitHub</p>
+							</li>	
+							<li class="block-skills__menu-list-item">	
 								<img class="block-skills__menu-list__icons" src="./images/node.png" alt="Node.js"><p class="block-skills__menu-list-text">Node.js</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/bootstrap.png" alt="Bootstrap"><p class="block-skills__menu-list-text">Bootstrap</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/c.png" alt="С"><p class="block-skills__menu-list-text">C</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/cplusplus.png" alt="С++"><p class="block-skills__menu-list-text">C++</p>
+							</li>
+							<li class="block-skills__menu-list-item">
 								<img class="block-skills__menu-list__icons" src="./images/csharp.png" alt="С++"><p class="block-skills__menu-list-text">C#</p>
 							</li>
 						</ul>
@@ -141,18 +161,14 @@ export function isAuthenticated(){
 </code></pre>
 					</section>
 					<section class="block-projects">
+
 						<h2 class="block-projects__title" id="projects">Projects</h2>
-						<!-- <p class="block-projects__text"><strong>1)</strong> Simple online coffee shop using React.js. Implemented functions: authorization, adding/removing items from cart, list of items, ordering. Data of goods and users in the local api.</p>
-							<ul class="block-projects__menu-list">
-								<li class="block-projects__menu-list-item">
-									<a href="https://github.com/anthony-th/simple-coffee-shop" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/first_projects.jpg" alt="first project first image"></a>
-								</li>
-								<li class="block-projects__menu-list-item">
-									<a href="https://github.com/anthony-th/simple-coffee-shop" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/first_projects2.jpg" alt="first project second image"></a>
-								</li>
-							</ul> -->
-						<p class="block-projects__text"><strong>1)</strong> Simple Portfolio for Photographer.The page is adaptive, with language switching and switching from dark to light themes. This layout is made with PerfectPixel for a full match with the layout from Figma.</p>
-						<ul class="block-projects__menu-list">
+						<div class="block-projects__container">
+							<div class="block-projects__left-column">
+								<p class="block-projects__text"><strong>1)</strong> Simple <strong>Portfolio</strong> for Photographer.The page is adaptive, with language switching and switching from dark to light themes. This layout is made with PerfectPixel for a full match with the layout from Figma.</p>
+							</div>
+							<div class="block-projects__right-column">
+								<ul class="block-projects__menu-list">
 							<li class="block-projects__menu-list-item">
 								<a href="https://rolling-scopes-school.github.io/anthony-th-JSFEPRESCHOOL/portfolio/" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/2_1.jpg" alt="second project first image gh-pages"></a>
 							</li>
@@ -162,25 +178,66 @@ export function isAuthenticated(){
 							<li class="block-projects__menu-list-item">
 								<a href="https://rolling-scopes-school.github.io/anthony-th-JSFEPRESCHOOL/portfolio/" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/2_3.jpg" alt="second project third image gh-pages"></a>
 							</li>
-						</ul>
-						<p class="block-projects__text"><strong>2)</strong> Project "Eco-sounds". The functionality of the page is implemented in pure js without the use of third-party libraries. Each inscription plays the sound of the corresponding bird, the play\pause button pauses any track or starts it up again.</p>
-						<ul class="block-projects__menu-list">
+							</ul>	
+							</div>
+						</div>
+						<!-- <div class="block-projects__container">
+							<div class="block-projects__left-column">
+								<p class="block-projects__text"><strong>1)</strong> Simple online coffee shop using React.js. Implemented functions: authorization, adding/removing items from cart, list of items, ordering. Data of goods and users in the local api.</p>
+							</div>
+							<div class="block-projects__right-column">
+								<ul class="block-projects__menu-list">
+								<li class="block-projects__menu-list-item">
+									<a href="https://github.com/anthony-th/simple-coffee-shop" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/first_projects.jpg" alt="first project first image"></a>
+								</li>
+								<li class="block-projects__menu-list-item">
+									<a href="https://github.com/anthony-th/simple-coffee-shop" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/first_projects2.jpg" alt="first project second image"></a>
+								</li>
+							</ul>	
+							</div>
+						</div> -->
+						<div class="block-projects__container">
+							<div class="block-projects__left-column">
+								<p class="block-projects__text"><strong>2)</strong> Project <strong>"Eco-sounds"</strong>. The functionality of the page is implemented in pure js without the use of third-party libraries. Each inscription plays the sound of the corresponding bird, the play\pause button pauses any track or starts it up again.</p>
+							</div>
+							<div class="block-projects__right-column">
+								<ul class="block-projects__menu-list">
 							<li class="block-projects__menu-list-item">
 								<a href="https://rolling-scopes-school.github.io/anthony-th-JSFEPRESCHOOL/eco-sounds/" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/3_1.jpg" alt="third project first image gh-pages"></a>
 							</li>
 							<li class="block-projects__menu-list-item">
 								<a href="https://rolling-scopes-school.github.io/anthony-th-JSFEPRESCHOOL/eco-sounds/" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/3_2.jpg" alt="third project second image gh-pages"></a>
 							</li>
-						</ul>
-						<p class="block-projects__text"><strong>3)</strong> Project "Random jokes". In this application, when you click the button, a random quote from the API is displayed. Pressing the button is accompanied by sound and animation. The json file is used as the source of the quote. It is possible to switch the page between Russian and English.</p>
-						<ul class="block-projects__menu-list">
+						</ul>	
+							</div>
+						</div>
+						<div class="block-projects__container">
+							<div class="block-projects__left-column">
+								<p class="block-projects__text"><strong>3)</strong> Project <strong>"Random jokes"</strong>. In this application, when you click the button, a random quote from the API is displayed. Pressing the button is accompanied by sound and animation. The json file is used as the source of the quote. It is possible to switch the page between Russian and English.</p>
+							</div>
+							<div class="block-projects__right-column">
+								<ul class="block-projects__menu-list">
 							<li class="block-projects__menu-list-item">
 								<a href="https://rolling-scopes-school.github.io/anthony-th-JSFEPRESCHOOL/random-jokes/" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/4_1.jpg" alt="fourth project first image gh-pages"></a>
 							</li>
 							<li class="block-projects__menu-list-item">
 								<a href="https://rolling-scopes-school.github.io/anthony-th-JSFEPRESCHOOL/random-jokes/" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/4_2.jpg" alt="fourth project second image gh-pages"></a>
 							</li>
-						</ul>
+							</ul>	
+							</div>
+						</div>
+						<div class="block-projects__container">
+							<div class="block-projects__left-column">
+								<p class="block-projects__text"><strong>4)</strong> Project <strong>"Shelter"</strong>. <br/>Status: in progress.</p>
+							</div>
+							<div class="block-projects__right-column">
+								<ul class="block-projects__menu-list">
+							<li class="block-projects__menu-list-item">
+								<a href="https://rolling-scopes-school.github.io/anthony-th-JSFE2022Q1/shelter/pages/main/" target="_blank"><img class="block-projects__menu-list__icons" src="./images/projects/5_1.jpg" alt="fifth project first image gh-pages"></a>
+							</li>
+							</ul>	
+							</div>
+						</div>
 					</section>
 				</div>
 			</main>
