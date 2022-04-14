@@ -9,9 +9,6 @@ html {
 }
 
 body {
-	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 	margin: 0;
 	background-color: #191a1b;
 	font-family: 'Roboto', sans-serif;
@@ -20,8 +17,7 @@ body {
 .main-container {
 	width: 1000px;
 	margin: 0 auto;
-	min-height: 100%;
-	background-color: rgba(136, 136, 136, 0.4);
+	min-height: 100vh;
 }
 header {
 	background-color: #2d2f31;
@@ -96,11 +92,16 @@ header {
 .container__right {
 	width: 73%;
 	background-color: #ffffff;
-	padding: 20px;
+	padding: 15px;
 }
 
 .avatar {
 	width: 100%;
+}
+
+.block-main__name {
+	margin: 0;
+	padding: 5px 30px;
 }
 
 .block-main__name-title {
@@ -278,18 +279,21 @@ nav {
 }
 
 footer {
+	background: #2d2f31;
+	padding: 7px 20px 5px;
+}
+
+.footer-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	color: #fefefe;
-	background: #2d2f31;
-	padding: 7px 20px 5px 20px;
+	padding: 0 52px;
 }
 
 .block-footer__img {
     height: 40px;
-    margin-left: 50px;
     opacity: 0.3;
 }
 
@@ -298,6 +302,13 @@ footer {
 	color: #fefefe;
 	opacity: 0.3;
 	cursor: default;
+}
+
+.footer-year {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
 }
 
 .footer-year__title:hover,
@@ -343,7 +354,7 @@ footer {
 .block-projects__menu-list__icons {
 	border: 1px solid rgba(255, 79, 0, 0.5);
 	padding: 0;
-	height: 131px;
+	height: 133px;
 }
 
 #skills, 
