@@ -131,7 +131,34 @@
 					</section>
 					<section class="block-code">
 						<h2 class="block-code__title" id="code">Code example</h2>
-						<pre class="block-code__example"><code></code></pre>
+						<pre class="block-code__example"><code>import&nbsp;axios&nbsp;from&nbsp;'axios';
+
+const&nbsp;BASE_URL&nbsp;=&nbsp;'http://localhost:5000';
+
+export&nbsp;function&nbsp;getProducts()&nbsp;{
+&nbsp;&nbsp;return&nbsp;axios.get(`${BASE_URL}/api/products`)
+&nbsp;&nbsp;&nbsp;&nbsp;.then(response&nbsp;=>&nbsp;response.data);
+}
+
+export&nbsp;function&nbsp;getCartProducts(cart)&nbsp;{
+&nbsp;&nbsp;return&nbsp;axios.post(`${BASE_URL}/api/products`,&nbsp;{cart})
+&nbsp;&nbsp;&nbsp;&nbsp;.then(response&nbsp;=>&nbsp;response.data);
+}
+
+export&nbsp;function&nbsp;login&nbsp;(data)&nbsp;{
+&nbsp;&nbsp;return&nbsp;axios.post(`${BASE_URL}/api/auth`,&nbsp;{&nbsp;name:&nbsp;data.name,&nbsp;password:&nbsp;data.password&nbsp;})
+&nbsp;&nbsp;&nbsp;&nbsp;.then(response&nbsp;=>&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.setItem('x-access-token',&nbsp;response.data.token);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localStorage.setItem('x-access-token-expiration',&nbsp;Date.now()&nbsp;+&nbsp;2&nbsp;*&nbsp;60&nbsp;*&nbsp;60&nbsp;*&nbsp;1000);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;response.data
+&nbsp;&nbsp;&nbsp;&nbsp;})
+&nbsp;&nbsp;&nbsp;&nbsp;.catch(err&nbsp;=>&nbsp;Promise.reject('Error&nbsp;authentication!'));
+}
+
+export&nbsp;function&nbsp;isAuthenticated(){
+&nbsp;&nbsp;return&nbsp;localStorage.getItem('x-access-token')&nbsp;&amp;&amp;&nbsp;localStorage.getItem('x-access-token-expiration')&nbsp;&gt;&nbsp;Date.now()
+}
+</code></pre>
 					</section>
 					<section class="block-projects">
 
