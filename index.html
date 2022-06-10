@@ -131,20 +131,16 @@
 					</section>
 					<section class="block-code">
 						<h2 class="block-code__title" id="code">Code example</h2>
-						<pre class="block-code__example"><code>import&nbsp;axios&nbsp;from&nbsp;'axios';
-
-const&nbsp;BASE_URL&nbsp;=&nbsp;'http://localhost:5000';
-
+						<pre class="block-code__example"><code>import&nbsp;axios&nbsp;from&nbsp;'axios';<br>
+const&nbsp;BASE_URL&nbsp;=&nbsp;'http://localhost:5000';<br>
 export&nbsp;function&nbsp;getProducts()&nbsp;{
 &nbsp;&nbsp;return&nbsp;axios.get(`${BASE_URL}/api/products`)
 &nbsp;&nbsp;&nbsp;&nbsp;.then(response&nbsp;=&gt;&nbsp;response.data);
-}
-
+}<br>
 export&nbsp;function&nbsp;getCartProducts(cart)&nbsp;{
 &nbsp;&nbsp;return&nbsp;axios.post(`${BASE_URL}/api/products`,&nbsp;{cart})
 &nbsp;&nbsp;&nbsp;&nbsp;.then(response&nbsp;=&gt;&nbsp;response.data);
-}
-
+}<br>
 export&nbsp;function&nbsp;login&nbsp;(data)&nbsp;{
 &nbsp;&nbsp;return&nbsp;axios.post(`${BASE_URL}/api/auth`,&nbsp;{&nbsp;name:&nbsp;data.name,&nbsp;password:&nbsp;data.password&nbsp;})
 &nbsp;&nbsp;&nbsp;&nbsp;.then(response&nbsp;=&gt;&nbsp;{
@@ -153,12 +149,10 @@ export&nbsp;function&nbsp;login&nbsp;(data)&nbsp;{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;response.data
 &nbsp;&nbsp;&nbsp;&nbsp;})
 &nbsp;&nbsp;&nbsp;&nbsp;.catch(err&nbsp;=&gt;&nbsp;Promise.reject('Error&nbsp;authentication!'));
-}
-
+}<br>
 export&nbsp;function&nbsp;isAuthenticated(){
 &nbsp;&nbsp;return&nbsp;localStorage.getItem('x-access-token')&nbsp;&amp;&amp;&nbsp;localStorage.getItem('x-access-token-expiration')&nbsp;&gt;&nbsp;Date.now()
-}
-</code></pre>
+}</code></pre>
 					</section>
 					<section class="block-projects">
 
