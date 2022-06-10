@@ -131,34 +131,7 @@
 					</section>
 					<section class="block-code">
 						<h2 class="block-code__title" id="code">Code example</h2>
-						<pre class="block-code__example"><code>import axios from 'axios';
-
-const BASE_URL = 'http://localhost:5000';
-
-export function getProducts() {
-	return axios.get(`${BASE_URL}/api/products`)
-		.then(response => response.data);
-}
-
-export function getCartProducts(cart) {
-	return axios.post(`${BASE_URL}/api/products`, {cart})
-		.then(response => response.data);
-}
-
-export function login (data) {
-	return axios.post(`${BASE_URL}/api/auth`, { name: data.name, password: data.password })
-		.then(response => {
-			localStorage.setItem('x-access-token', response.data.token);
-			localStorage.setItem('x-access-token-expiration', Date.now() + 2 * 60 * 60 * 1000);
-			return response.data
-		})
-		.catch(err => Promise.reject('Error authentication!'));
-}
-
-export function isAuthenticated(){
-	return localStorage.getItem('x-access-token') &amp;&amp; localStorage.getItem('x-access-token-expiration') &gt; Date.now()
-}
-</code></pre>
+						<pre class="block-code__example"><code></code></pre>
 					</section>
 					<section class="block-projects">
 
@@ -232,15 +205,15 @@ export function isAuthenticated(){
 				<div class="footer-container">
 					<div class="footer-year">
 						<a href="https://github.com/anthony-th" target="_blank">
-				            <img class="block-footer__img" src="./images/git.png" alt="Anthony Th">
-				        </a>
+				      <img class="block-footer__img" src="./images/git.png" alt="Anthony Th">
+				    </a>
 						<h2 class="footer-year__title">2022</h2>
 					</div>
 					<div class="rs_label">
-				        <a href="https://rs.school/js/" target="_blank">
-				            <img class="block-footer__img" src="https://rs.school/images/rs_school_js.svg" alt="rs.school">
-				        </a>
-				    </div>
+				    <a href="https://rs.school/js/" target="_blank">
+				      <img class="block-footer__img" src="https://rs.school/images/rs_school_js.svg" alt="rs.school">
+				    </a>
+				  </div>
 				</div>
 			</footer>
 		</div>
