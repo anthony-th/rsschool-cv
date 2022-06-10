@@ -272,9 +272,8 @@ nav {
 	margin-bottom: 10px;
 	font-size: 14px;
 	overflow: auto;
-	width: auto;
 	padding: 5px 20px;
-	width: 650px!ie7;
+	width: 650px;
 	max-height: 600px;
 }
 
@@ -439,7 +438,6 @@ footer {
 	justify-content: center;
 	list-style-type: none;
 	column-gap: 5px;
-	/*row-gap: 5px;*/
 }
 
 .block-projects__text {
@@ -450,8 +448,4 @@ footer {
 	font-size: 14px;
 	letter-spacing: 0.026em;
 	font-style: italic;
-}
-
-.block-projects__menu-list-item {
-
 }
