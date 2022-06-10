@@ -156,7 +156,7 @@ export function login (data) {
 }
 
 export function isAuthenticated(){
-	return localStorage.getItem('x-access-token') && localStorage.getItem('x-access-token-expiration') > Date.now()
+	return localStorage.getItem('x-access-token') &amp;&amp; localStorage.getItem('x-access-token-expiration') &gt; Date.now()
 }
 </code></pre>
 					</section>
@@ -244,6 +244,6 @@ export function isAuthenticated(){
 				</div>
 			</footer>
 		</div>
-		<a href="#top" class="buttonTop"></a>
+		<a href="#top" class="buttonTop"><span class="hidden-text-btnTop">Top</span></a>
 	</body>
 </html>
