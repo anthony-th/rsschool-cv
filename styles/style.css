@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth; 
 }
 
-body {
+.body {
 	margin: 0;
 	background-color: #191a1b;
 	font-family: 'Roboto', sans-serif;
@@ -19,10 +19,9 @@ body {
 	margin: 0 auto;
 	min-height: 100vh;
 }
-header {
-	background-color: #2d2f31;
-}
+
 .header-block {
+	background-color: #2d2f31;
 	position: sticky;
 	top: 0;
 	z-index: 2;
@@ -231,7 +230,7 @@ header {
 	margin: 0 0 5px 0;
 }
 
-nav {
+.header__nav {
 	display: flex;
 	width: 100%;
 	align-content: center;
@@ -277,7 +276,7 @@ nav {
 	max-height: 600px;
 }
 
-footer {
+.footer {
 	background: #2d2f31;
 	padding: 7px 20px 5px;
 }
