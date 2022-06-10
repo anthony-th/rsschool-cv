@@ -60,14 +60,14 @@ header {
 }
 
 .header__nav-list-link:hover {
-	color: rgba(255, 79, 0, 0.8);
+	color: rgba(117, 95, 241, 0.8);
 }
 
 .header__nav-list-link::after { 
  	content: "";
  	position: absolute;
  	height: 2px;
- 	background-color: rgba(255, 79, 0, 0.8);
+ 	background-color: rgba(117, 95, 241, 0.8);
  	width: 0;
  	left: 50%;
  	bottom: -7px;
@@ -136,7 +136,7 @@ header {
 	padding: 2px 7px 2px;
 	padding-right: 7px;
 	text-transform: uppercase;
-	background-color: rgba(255, 79, 0, 0.8);
+	background-color: rgba(22, 13, 79, 0.8);
 }
 
 .contact-block__title:hover, 
@@ -163,7 +163,7 @@ header {
 	line-height: 1.3;
 	padding: 5px 10px 5px;
 	text-transform: uppercase;
-	background-color: rgba(255, 79, 0, 0.8);
+	background-color: rgba(22, 13, 79, 0.8);
 }
 
 .block-summary__title:hover, 
@@ -196,7 +196,7 @@ header {
 }
 
 .contact-block__menu-list-link:hover {
-	color: rgba(255, 79, 0, 0.8);
+	color: rgb(117, 95, 241);
 }
 
 .contact-block__menu-list-link::before {
@@ -206,7 +206,7 @@ header {
 	bottom: -2px;
 	width: 0;
 	height: 2px;
-	background-color: rgba(255, 79, 0, 0.7);
+	background-color: rgb(117, 95, 241);
 }
 
 .contact-block__menu-list-link:hover:before {
@@ -351,7 +351,7 @@ footer {
 }
 
 .block-projects__menu-list__icons {
-	border: 1px solid rgba(255, 79, 0, 0.5);
+	border: 1px solid rgba(117, 95, 241, 0.5);
 	padding: 0;
 	height: 133px;
 }
@@ -404,7 +404,7 @@ footer {
 	justify-content: space-between;
 	column-gap: 5px;
 	row-gap: 5px;
-	border-bottom: 2px solid rgba(255, 79, 0, 0.8);
+	border-bottom: 2px solid rgba(117, 95, 241, 0.8);
 	padding-bottom: 10px;
 }
 
