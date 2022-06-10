@@ -272,7 +272,7 @@ html {
 	font-size: 14px;
 	overflow: auto;
 	padding: 5px 20px;
-	width: 650px;
+	width: auto;
 	max-height: 600px;
 }
 
