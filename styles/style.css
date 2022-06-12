@@ -100,6 +100,7 @@ html {
 
 .avatar {
 	width: 100%;
+	aspect-ratio: 1 / 1;
 }
 
 .block-name {
@@ -437,6 +438,14 @@ html {
 .list-big {
 	width: 70%;
 	height: auto;
+}
+
+.list-big .block-projects__menu-list__icons {
+	aspect-ratio: 1192 / 637;
+}
+
+.list-small .block-projects__menu-list__icons {
+	aspect-ratio: 832 / 500;
 }
 
 .list-small {
