@@ -403,17 +403,24 @@ html {
 	z-index: 2;
 }
 
-.buttonTop {
+.button-top {
 	display: block;
-	background: url('../images/btnUp.webp') center no-repeat;
-	background-size: 32px;
-	height: 32px; width: 32px;
-	position: fixed; bottom: 15px; right: 17px;
+	padding: 15px;
+	position: fixed; 
+	bottom: 15px; 
+	right: 15px;
 	z-index: 2;
+	border-radius: 2px;
+	background-color: #2f3239;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	display: none;
 }
 
-.buttonTop:hover {
-	transform: scale(1.2);
+.button-top:hover {
+	background-color: rgb(117, 95, 241);
 	transition: 1s;
 }
 
@@ -435,10 +442,6 @@ html {
 	flex-direction: column;
 	gap: 2px;
 	padding: 10px 0;
-}
-
-.hidden-text-btnTop {
-	visibility: hidden;
 }
 
 .block-projects-list {
