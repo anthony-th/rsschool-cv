@@ -370,10 +370,12 @@ html {
 	cursor: default;
 }
 
-.block-skills__menu-list__icons:hover,
 .block-skills__menu-list-text:hover {
-	transition: 1s;
 	transform: scale(1.1);
+}
+
+.block-skills__menu-list__icons:hover {
+	transform: rotate(360deg);
 }
 
 .block-skills__menu-list__icons {
