@@ -20,12 +20,8 @@ html {
 }
 
 .body {
-	margin: 0;
 	background-color: #191a1b;
 	font-family: 'Roboto', sans-serif;
-}
-
-.main-container {
 	max-width: 1000px;
 	margin: 0 auto;
 	min-height: 100vh;
@@ -36,10 +32,6 @@ html {
 	position: sticky;
 	top: 0;
 	z-index: 3;
-}
-
-.header__nav {
-	margin: 0;
 }
 
 .header__nav-list {
@@ -603,7 +595,7 @@ html {
 		font-size: 15px;
 	}
 
-	.main-container {
+	.body {
 		min-width: 320px;
 	}
 
