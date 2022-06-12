@@ -295,7 +295,6 @@ html {
 }
 
 .block-code__example {
-	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	font-size: 14px;
 	overflow: auto;
 	padding: 10px 20px;
@@ -387,7 +386,6 @@ html {
 	filter: grayscale(100%);
 	width: 100%;
 	height: 100%;
-	position: relative;
 }
 
 .block-experience__title,
@@ -453,18 +451,6 @@ html {
 .list-big {
 	width: 70%;
 	height: auto;
-}
-
-.list-big .block-projects__menu-list__icons {
-	max-width: 945px;
-  aspect-ratio: auto 945 / 505;
-  max-height: 505px;
-}
-
-.list-small .block-projects__menu-list__icons {
-	max-width: 832px;
-  aspect-ratio: auto 832 / 500;
-  max-height: 500px;
 }
 
 .list-small {
