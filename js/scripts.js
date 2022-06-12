@@ -9,10 +9,10 @@ const shadow = document.querySelector('.shadow-block');
 
 const changeMenu = function() {
   navList.classList.toggle('open');
-	hamburger.classList.toggle('rotate');
+  hamburger.classList.toggle('rotate');
   body.classList.toggle('overflow');
   shadow.classList.toggle('shadow-open');
-	shadow.classList.toggle('shadow-inin');
+  shadow.classList.toggle('shadow-inin');
 }
 
 hamburger.addEventListener('click', function(e) {

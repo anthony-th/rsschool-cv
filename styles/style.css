@@ -558,6 +558,14 @@ html {
 	.footer-year__title {
 		font-size: 18px;
 	}
+	
+	.block-experience__title,
+  .block-skills__title,
+  .block-projects__title,
+  .block-code__title,
+  .block-summary__title {
+	  scroll-margin-top: 0;
+  }
 
 }
 
@@ -581,7 +589,6 @@ html {
 
 .open {
 	right: 0;
-	transition: 2s;
 	opacity: 1;
 	padding-top: 60px;
 }
