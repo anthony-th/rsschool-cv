@@ -441,11 +441,15 @@ html {
 }
 
 .list-big .block-projects__menu-list__icons {
-	aspect-ratio: 1192 / 637;
+	max-width: 945px;
+  aspect-ratio: auto 945 / 505;
+  max-height: 505px;
 }
 
 .list-small .block-projects__menu-list__icons {
-	aspect-ratio: 832 / 500;
+	max-width: 832px;
+  aspect-ratio: auto 832 / 500;
+  max-height: 500px;
 }
 
 .list-small {
