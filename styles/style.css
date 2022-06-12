@@ -405,7 +405,7 @@ html {
 
 .buttonTop {
 	display: block;
-	background: url('../images/btnUp.png') center no-repeat;
+	background: url('../images/btnUp.webp') center no-repeat;
 	background-size: 32px;
 	height: 32px; width: 32px;
 	position: fixed; bottom: 15px; right: 17px;
