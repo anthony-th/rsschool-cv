@@ -20,12 +20,8 @@ html {
 }
 
 .body {
-	margin: 0;
 	background-color: #191a1b;
 	font-family: 'Roboto', sans-serif;
-}
-
-.main-container {
 	max-width: 1000px;
 	margin: 0 auto;
 	min-height: 100vh;
@@ -36,10 +32,6 @@ html {
 	position: sticky;
 	top: 0;
 	z-index: 3;
-}
-
-.header__nav {
-	margin: 0;
 }
 
 .header__nav-list {
@@ -370,10 +362,12 @@ html {
 	cursor: default;
 }
 
-.block-skills__menu-list__icons:hover,
 .block-skills__menu-list-text:hover {
-	transition: 1s;
 	transform: scale(1.1);
+}
+
+.block-skills__menu-list__icons:hover {
+	transform: rotate(360deg);
 }
 
 .block-skills__menu-list__icons {
@@ -569,6 +563,7 @@ html {
 
 	.block-footer__img {
 		height: 30px;
+		width: 30px;
 	}
 
 	.rs-img {
@@ -601,7 +596,7 @@ html {
 		font-size: 15px;
 	}
 
-	.main-container {
+	.body {
 		min-width: 320px;
 	}
 
