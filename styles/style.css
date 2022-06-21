@@ -511,10 +511,34 @@ html {
 	padding-left: 22px;
 }
 
+
+@media screen and (max-width: 992px) {
+
+	.list {
+		padding: 5px 15px 0;
+	}
+
+	.contact-block__menu-list-link {
+		font-size: 16px;
+	}
+
+	.phone-item,
+	.github-item,
+	.email-item {
+		padding-left: 24px;
+	}
+
+	.contact-block__menu-list-link::after {
+		width: 20px;
+		height: 20px;
+	}
+
+}
+
 @media screen and (max-width: 830px) {
 
 	.list {
-		padding: 0 5px;
+		padding: 5px 10px 0;
 	}
 	
 	.contact-block__menu-list-link,
@@ -524,6 +548,23 @@ html {
 
 	.footer-container {
 		padding: 5px 10px;
+	}
+
+}
+
+@media screen and (max-width: 762px) { 
+
+	.container__left {
+		width: 30%;
+	}
+
+	.container__right {
+		width: 70%;
+	}
+
+	.contact-block__menu-list-link, 
+	.header__nav-list-text {
+		font-size: 14px;
 	}
 
 }
